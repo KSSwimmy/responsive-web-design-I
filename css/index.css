@@ -84,8 +84,6 @@ h1, h2, h3, h4, h5 {
  .container {
 
 	 width: 420px;
-
-
  }
 }
 
@@ -115,14 +113,7 @@ header {
 
 }
 /* At 800px And below do the following: */
-@media (max-width: 800px) {
- .logo {
-
-	 display: flex; 
-	 flex-direction: row-reverse;
-	 margin-top: -90px;
-	 margin-left: 259px; 
- }
+@media (max-width: 800px) 
 }
 
 /* At 500px And below do the following: */
@@ -140,18 +131,26 @@ nav {
  word-spacing: 40px;  
  box-sizing: border-box;
  padding: 10px; 
-
+font-size: 
 }
 /* At 800px And below do the following: */
 @media (max-width: 800px) {
- nav {
 
 
+	nav {
 	 word-spacing: 40px;
 	 margin-top: 90px;
-
  }
+		.logo {
+	   
+			display: flex; 
+			flex-direction: row-reverse;
+			margin-top: -90px;
+			margin-left: 259px; 
+		}
+
 }
+
 
 /* At 500px And below do the following: */
 @media (max-width: 500px) {
@@ -177,8 +176,7 @@ nav a {
 	 padding: 20px; 
 	 background: white;
 	 border-bottom: 1px solid black;
-
-
+	
  }
 }
 
@@ -196,7 +194,10 @@ box-sizing: border-box;
  display: inline-block;
  width: 270px;
  height: 300px; 
- text-align: center; 
+ text-align: center;
+ font-size: 80px;
+  
+
 }
 
 /* At 500px And below do the following: */
