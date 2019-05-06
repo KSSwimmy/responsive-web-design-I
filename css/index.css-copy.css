@@ -67,23 +67,74 @@ h1, h2, h3, h4, h5 {
 
 .container {
     margin: auto;
-    width: 50%;
+    width: 60%;
     font-family: 'Exo 2', sans-serif;
 }
 
-/* At 800px And below do the following: */
+/* At 800px And below do the following: Tablet */
 @media (max-width: 800px) {
     .container { 
         width: 800px;
     }
 }
 
-/* At 500px and below do the following: */
+/* At 500px and below do the following: Phone  */
 @media (max-width: 500px) {
     .container {
         width: 500px
     }
 }
+
+header {
+    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    padding-bottom: 70px;
+    text-align: center;
+
+}
+
+/* At 800px and below do the following: Tablet */
+@media (max-width: 800px) {
+    header {
+        width: 700px;
+        margin: auto;
+}
+}
+
+.logo {
+    background-color: white;
+
+}
+/* At 800px and below do the following: Tablet */
+@media (max-width: 800px) {
+    .logo {
+        flex-direction: reverse; 
+
+    }
+}
+
+@media (max-width: 500px) {
+    .logo {
+       flex-direction: reverse; 
+    }
+}
+
+nav {
+    word-spacing: 40px; 
+    flex-direction: row;
+    padding: 10px;
+
+}
+
+@media (max-width: 800px) {
+nav {
+    word-spacing: 40px;
+    margin-top: 90px;
+}
+}
+
+
+
 
 
 
