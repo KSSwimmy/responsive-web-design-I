@@ -65,4 +65,25 @@ h1, h2, h3, h4, h5 {
 
 /*----------------------------------------------------------------------------*/
 
+.container {
+    margin: auto;
+    width: 50%;
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* At 800px And below do the following: */
+@media (max-width: 800px) {
+    .container { 
+        width: 800px;
+    }
+}
+
+/* At 500px and below do the following: */
+@media (max-width: 500px) {
+    .container {
+        width: 500px
+    }
+}
+
+
 
