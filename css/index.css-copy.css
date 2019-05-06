@@ -108,7 +108,10 @@ header {
 /* At 800px and below do the following: Tablet */
 @media (max-width: 800px) {
     .logo {
+        display: flex;
         flex-direction: reverse; 
+        margin-top: -90px;
+        margin-left: 259px;
 
     }
 }
@@ -133,7 +136,297 @@ nav {
 }
 }
 
-
+/* At 500px And below do the following: */
+@media (max-width: 500px) {
+    nav {
+   
+        margin-top: 100px;
+   
+   
+    }
+   }
+   
+   
+   
+   nav a {
+    text-decoration: none;
+    color: #b3b3b3; 
+   
+   }
+   /* At 500px And below do the following: */
+   @media (max-width: 500px) {
+    nav a {
+        display: block ;
+        padding: 20px; 
+        background: white;
+        border-bottom: 1px solid black;
+       
+    }
+   }
+   
+   
+   
+   .top-section {
+   padding-bottom: 10px; 
+   box-sizing: border-box;
+   }
+   
+   
+   
+   .main {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 270px;
+    height: 300px; 
+    text-align: center;
+    font-size: 80px;
+     
+   
+   }
+   
+   /* At 500px And below do the following: */
+   @media (max-width: 500px) {
+    .title {
+        margin-top: -110px; 
+        margin-left: 0px; 
+        width: 230px; 
+    }
+   }
+   
+   
+   
+   .title-logo {
+    display: inline-block;
+    margin-left: 88px; 
+    margin-top: 40px; 
+   }
+   
+   /* At 800px And below do the following: */
+   @media (max-width: 800px) {
+    .title-logo {
+        display: none;
+    }
+   }
+   
+   .title h1 {
+   font-size: 70px; 
+   }
+   
+   /* At 800px And below do the following: */
+   @media (max-width: 800px) {
+    .title h1 {
+        margin-top: 90px; 
+        margin-left: 20px;
+        text-align: center;
+        font-size: 75px;
+    }
+   }
+   
+   /* At 500px And below do the following: */
+   @media (max-width: 500px) {
+    .title h1 {
+   
+        font-size: 75px;  
+        margin-top: 500px; 
+        margin-left: -40px;
+   
+   
+    }
+   }
+   
+   .title-button {
+    width: 180px;
+    box-sizing: border-box;
+    padding: 8px; 
+    border: 1px solid black;
+    font-size: 16px;
+   
+   }
+   
+   @media (max-width: 800px) {
+    .title-button {
+        margin-left: 10px;
+        text-align: center;
+    }
+   }
+   
+   @media (max-width: 500px) {
+    .title-button {
+        margin-left: -30px;
+        text-align: center;
+    }
+   }
+   
+   .middle-content {
+    padding-top: 30px; 
+    line-height: 1.6; 
+   }
+   
+   @media (max-width: 800px) {
+    .middle-content { 
+        line-height: 1.6; 
+    }
+   }
+   
+   .middle-content img {
+    width: 100%; 
+   }
+   
+   @media (max-width: 800px) {
+    .middle-content img {
+        width: 100%; 
+    }
+   }
+   
+   
+   .features {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 400px;
+    padding: 20px; 
+   }
+   
+   @media (max-width: 800px) {
+    .features {
+        width: 340px; 
+   
+    }
+   }
+   
+   
+   @media (max-width: 500px) {
+    .features {
+        width: 430px; 
+   
+    }
+   }
+   
+   
+   .about {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 390px;
+    padding: 20px; 
+   }
+   
+   @media (max-width: 800px) {
+    .about {
+        width: 340px; 
+   
+    }
+   }
+   
+   @media (max-width: 500px) {
+    .about {
+        width: 430px; 
+   
+    }
+   }
+   
+   .bottom-content { 
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    padding-top: 20px; 
+    padding-bottom: 30px; 
+    line-height: 1.6; 
+   }
+   .services {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 257px;
+    margin: 3px;
+   }
+   
+   @media (max-width: 800px) {
+    .services {
+        width: 214px; 
+   
+    }
+   }
+   
+   /* At 500px And below do the following: */
+   @media (max-width: 500px) {
+    .services {
+   
+        width: 410px; 
+        margin-top: 8px;
+        margin-bottom: 8px; 
+        padding: 10px; 
+        box-sizing: border-box; 
+   
+    }
+   }
+   
+   
+   .product {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 257px;
+    margin: 3px;
+   }
+   
+   @media (max-width: 800px) {
+    .product {
+        width: 214px;   
+   
+    }
+   }
+   
+   @media (max-width: 500px) {
+    .product {
+   
+        width: 410px; 
+        margin-top: 8px;
+        margin-bottom: 8px; 
+        padding: 10px; 
+        box-sizing: border-box; 
+   
+    }
+   }
+   
+   
+   
+   .vision {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 257px;  
+    margin: 3px;
+   }
+   
+   @media (max-width: 800px) {
+    .vision {
+        width: 214px;  
+   
+    }
+   }
+   
+   @media (max-width: 500px) {
+    .vision {
+   
+        width: 410px; 
+        margin-top: 8px;
+        margin-bottom: 8px; 
+        padding: 10px; 
+        box-sizing: border-box; 
+   
+    }
+   }
+   
+   
+   
+   
+   .contact {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 252px; 
+    padding-top: 28px; 
+    line-height: 1.6; 
+   }
+   
+   footer {
+    text-align: center;
+    padding: 50px; 
+   } 
 
 
 
