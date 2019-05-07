@@ -65,15 +65,18 @@ h1, h2, h3, h4, h5 {
 
 /*----------------------------------------------------------------------------*/
 
+
+
 .container {
     margin: auto;
-    width: 60%;
+    max-width: 1000px;
     font-family: 'Exo 2', sans-serif;
 }
 
 /* At 800px And below do the following: Tablet */
 @media (max-width: 800px) {
     .container { 
+
         width: 800px;
     }
 }
@@ -81,7 +84,23 @@ h1, h2, h3, h4, h5 {
 /* At 500px and below do the following: Phone  */
 @media (max-width: 500px) {
     .container {
-        width: 500px
+        width: 500px;
+        border: 1px solid red;
+    }
+
+    .main{
+        border: 2px solid green;
+    }
+
+     .main h1 {
+        border: 1px solid orange;
+    } 
+
+    .top-section {
+        border: 3px solid grey;
+        width: 100%;
+
+
     }
 }
 
@@ -90,22 +109,30 @@ header {
     border-bottom: 2px solid black;
     padding-bottom: 70px;
     text-align: center;
-
+    width: 100%;
+border: 5px solid red;
 }
 
 /* At 800px and below do the following: Tablet */
 @media (max-width: 800px) {
     header {
-        width: 700px;
+        
         margin: auto;
 }
 }
 
-.logo {
+.nav-div {
+    display: flex;
+
+}
+
+
+
+/*.logo {
     background-color: white;
 
 }
-/* At 800px and below do the following: Tablet */
+/* At 800px and below do the following: Tablet 
 @media (max-width: 800px) {
     .logo {
         display: flex;
@@ -115,6 +142,7 @@ header {
 
     }
 }
+*/
 
 @media (max-width: 500px) {
     .logo {
@@ -124,6 +152,7 @@ header {
 
 nav {
     word-spacing: 40px; 
+    display: flex;
     flex-direction: row;
     padding: 10px;
 
@@ -140,28 +169,44 @@ nav {
 @media (max-width: 500px) {
     nav {
    
-        margin-top: 100px;
+        margin: 10px;
    
    
     }
    }
    
+
    
    
    nav a {
     text-decoration: none;
     color: #b3b3b3; 
+    
    
    }
    /* At 500px And below do the following: */
-   @media (max-width: 500px) {
+   @media (max-width: 500px) { 
+nav {
+    display: flex ;
+    flex-direction: column;
+    
+}
+
     nav a {
-        display: block ;
         padding: 20px; 
         background: white;
         border-bottom: 1px solid black;
+
        
     }
+.nav-div {
+    display: flex;
+    flex-direction: column-reverse;
+   align-items: center;
+   margin: 0 auto;
+   border: 1px solid purple;
+}
+
    }
    
    
