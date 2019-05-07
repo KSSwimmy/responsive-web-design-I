@@ -81,11 +81,25 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+.top-section {
+    padding-bottom: 10px; 
+    display: flex;
+
+
+    }
+    
+
+.main {
+    display: flex; 
+
+}
+
 /* At 500px and below do the following: Phone  */
 @media (max-width: 500px) {
     .container {
         width: 500px;
-        border: 1px solid red;
+        justify-content: center;
+        /*border: 1px solid red;*/
     }
 
     .main{
@@ -94,24 +108,25 @@ h1, h2, h3, h4, h5 {
 
      .main h1 {
         border: 1px solid orange;
+        text-align: center;
     } 
 
     .top-section {
-        border: 3px solid grey;
-        width: 100%;
-
+       margin: 0 auto;
+       
 
     }
 }
 
-header {
-    box-sizing: border-box;
+.content-container {
+   
     border-bottom: 2px solid black;
     padding-bottom: 70px;
-    text-align: center;
     width: 100%;
-border: 5px solid red;
+    /*border: 5px solid red;*/
 }
+
+
 
 /* At 800px and below do the following: Tablet */
 @media (max-width: 800px) {
@@ -142,19 +157,22 @@ border: 5px solid red;
 
     }
 }
-*/
+
 
 @media (max-width: 500px) {
     .logo {
        flex-direction: reverse; 
     }
 }
+*/
 
+
+/*NAVIGATION START --------------------*/
 nav {
-    word-spacing: 40px; 
     display: flex;
     flex-direction: row;
     padding: 10px;
+    justify-content: space-between;
 
 }
 
@@ -166,7 +184,7 @@ nav {
 }
 
 /* At 500px And below do the following: */
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     nav {
    
         margin: 10px;
@@ -175,13 +193,13 @@ nav {
     }
    }
    
-
-   
-   
    nav a {
+    display: flex;
+    flex-direction: row;  
     text-decoration: none;
     color: #b3b3b3; 
-    
+    justify-content: space-between;
+
    
    }
    /* At 500px And below do the following: */
@@ -196,37 +214,42 @@ nav {
         padding: 20px; 
         background: white;
         border-bottom: 1px solid black;
+        color: lightgray;
 
-       
+  
     }
 .nav-div {
     display: flex;
     flex-direction: column-reverse;
    align-items: center;
    margin: 0 auto;
-   border: 1px solid purple;
+   /*border: 1px solid purple;*/
 }
 
    }
-   
-   
+/* My nav isn't working!! Why!? Send help! */
+
+/* TOP-SECTION START ----------------------------*/   
    
    .top-section {
-   padding-bottom: 10px; 
-   box-sizing: border-box;
-   }
-   
-   
-   
-   .main {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 270px;
-    height: 300px; 
+    
+    display: flex;
     text-align: center;
     font-size: 80px;
+    margin: 0 auto;
      
-   
+   }
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 70px;
+}
+
+  .main h1 {
+       margin: 0 auto;
+        padding: px;
    }
    
    /* At 500px And below do the following: */
@@ -281,8 +304,7 @@ nav {
    
    .title-button {
     width: 180px;
-    box-sizing: border-box;
-    padding: 8px; 
+   margin: 0 auto;
     border: 1px solid black;
     font-size: 16px;
    
@@ -292,27 +314,32 @@ nav {
     .title-button {
         margin-left: 10px;
         text-align: center;
+        margin: 0 auto;
     }
    }
    
    @media (max-width: 500px) {
     .title-button {
-        margin-left: -30px;
+
         text-align: center;
+        margin: 0 auto;
+
     }
    }
-   
-   .middle-content {
-    padding-top: 30px; 
-    line-height: 1.6; 
+
+   .middle-line {
+    border-bottom: 2px solid black;
+    padding: 10px;
    }
+   
+
    
    @media (max-width: 800px) {
     .middle-content { 
         line-height: 1.6; 
     }
    }
-   
+
    .middle-content img {
     width: 100%; 
    }
@@ -324,149 +351,109 @@ nav {
    }
    
    
-   .features {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 400px;
+   .middle-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     padding: 20px; 
+   }
+
+   .middle-img {
+    width: 100%;
+   }
+
+   .bottom-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 20px; 
+
+   }
+
+   .middle-content div {
+    padding: 10px;
+   }
+
+   .bottom-content div {
+
+        padding: 10px;
    }
    
    @media (max-width: 800px) {
-    .features {
-        width: 340px; 
+    .middle-content {
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center
    
     }
-   }
-   
-   
-   @media (max-width: 500px) {
-    .features {
-        width: 430px; 
-   
+    .middle-img {
+        width: 100%
     }
+
+    @media (max-width: 500px){
+        .middle-content {
+            display: flex;
+            flex-direction: column;
+            
+       }
+
+       .middle-content div {
+           padding: 10px;
+       }
+
+   .middle-img {
+       width: 100%
    }
-   
-   
-   .about {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 390px;
-    padding: 20px; 
-   }
-   
-   @media (max-width: 800px) {
-    .about {
-        width: 340px; 
-   
     }
-   }
+
    
-   @media (max-width: 500px) {
-    .about {
-        width: 430px; 
-   
-    }
-   }
+  
    
    .bottom-content { 
-    border-bottom: 1px solid black;
-    box-sizing: border-box;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
     padding-top: 20px; 
     padding-bottom: 30px; 
     line-height: 1.6; 
    }
-   .services {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 257px;
-    margin: 3px;
-   }
    
    @media (max-width: 800px) {
-    .services {
-        width: 214px; 
+    .bottom-content {
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
    
     }
-   }
-   
-   /* At 500px And below do the following: */
-   @media (max-width: 500px) {
-    .services {
-   
-        width: 410px; 
-        margin-top: 8px;
-        margin-bottom: 8px; 
-        padding: 10px; 
-        box-sizing: border-box; 
-   
+
+    .bottom-content div {
+padding: 10px;
     }
+    
+
+    @media (max-width: 500px){
+        .bottom-content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            
+        }
+
+        .bottom-content div {
+            padding: 10px;
+        }
    }
+
    
-   
-   .product {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 257px;
-    margin: 3px;
+   .line2 {
+    border-bottom: 2px solid black;
+    padding: 10px;
    }
+   /* why isn't my line working?*/
    
-   @media (max-width: 800px) {
-    .product {
-        width: 214px;   
-   
-    }
-   }
-   
-   @media (max-width: 500px) {
-    .product {
-   
-        width: 410px; 
-        margin-top: 8px;
-        margin-bottom: 8px; 
-        padding: 10px; 
-        box-sizing: border-box; 
-   
-    }
-   }
-   
-   
-   
-   .vision {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 257px;  
-    margin: 3px;
-   }
-   
-   @media (max-width: 800px) {
-    .vision {
-        width: 214px;  
-   
-    }
-   }
-   
-   @media (max-width: 500px) {
-    .vision {
-   
-        width: 410px; 
-        margin-top: 8px;
-        margin-bottom: 8px; 
-        padding: 10px; 
-        box-sizing: border-box; 
-   
-    }
-   }
-   
-   
-   
-   
-   .contact {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 252px; 
-    padding-top: 28px; 
-    line-height: 1.6; 
-   }
+  
    
    footer {
     text-align: center;
